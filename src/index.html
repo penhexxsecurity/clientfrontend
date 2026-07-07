@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- ===================== BASIC META ===================== -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Penhexx Security - AI Powered Cybersecurity Infrastructure, Threat Intelligence & Penetration Testing Platform" />
+    <meta name="keywords" content="cybersecurity, ethical hacking, penetration testing, AI security, threat intelligence, vulnerability scanner, bug bounty" />
+    <meta name="author" content="Penhexx Security" />
+
+    <!-- ===================== TITLE ===================== -->
+    <title>Penhexx Security | AI Cybersecurity Platform</title>
+
+    <!-- ===================== FAVICON ===================== -->
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+    <!-- ===================== GOOGLE FONT ===================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- ===================== THEME COLOR ===================== -->
+    <meta name="theme-color" content="#05060a" />
+
+    <!-- ===================== OPEN GRAPH (SOCIAL PREVIEW) ===================== -->
+    <meta property="og:title" content="Penhexx Security" />
+    <meta property="og:description" content="AI-driven cybersecurity platform for modern enterprises" />
+    <meta property="og:type" content="website" />
+
+    <!-- ===================== TWITTER CARD ===================== -->
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- ===================== PERFORMANCE PRELOAD ===================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- ===================== BASE STYLE (BEFORE REACT LOADS) ===================== -->
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background: #05060a;
+        color: white;
+        font-family: Inter, system-ui, sans-serif;
+        overflow: hidden;
+      }
+
+      #root {
+        min-height: 100vh;
+      }
+
+      /* LOADING SCREEN */
+      .loader {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background: #05060a;
+      }
+
+      .spinner {
+        width: 45px;
+        height: 45px;
+        border: 3px solid rgba(0, 245, 255, 0.2);
+        border-top: 3px solid #00f5ff;
+        border-right: 3px solid #7c3aed;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+
+      .loading-text {
+        margin-top: 12px;
+        font-size: 14px;
+        color: #aaa;
+        letter-spacing: 1px;
+      }
+
+      /* subtle glow background effect */
+      body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(circle at 20% 20%, rgba(124,58,237,0.15), transparent 40%),
+                    radial-gradient(circle at 80% 80%, rgba(0,245,255,0.12), transparent 40%);
+        z-index: -1;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <!-- ===================== REACT ROOT ===================== -->
+    <div id="root">
+
+      <!-- LOADING FALLBACK -->
+      <div class="loader">
+        <div class="spinner"></div>
+        <div class="loading-text">Initializing Penhexx Security System...</div>
+      </div>
+
+    </div>
+
+    <!-- ===================== REACT ENTRY ===================== -->
+    <script type="module" src="/src/main.jsx"></script>
+
+  </body>
+</html>
