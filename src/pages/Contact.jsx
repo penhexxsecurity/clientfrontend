@@ -155,8 +155,8 @@ const Contact = () => {
     try {
       // Dynamic Endpoint Selection targeting your backend blueprint architecture
       const targetEndpoint = activeTab === "enterprise" 
-        ? "https://final-client-backend.onrender.com//api/enterprise/submit"
-        : "https://final-client-backend.onrender.com//api/general/submit";
+        ? "https://backend-gitignore.onrender.com/api/enterprise/submit"
+        : "https://backend-gitignore.onrender.com/api/general/submit";
 
       // Formulate pure schema structural payload to align exactly with backend expectation models
       const payload = {
