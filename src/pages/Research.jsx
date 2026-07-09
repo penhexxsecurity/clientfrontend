@@ -82,7 +82,7 @@ const Research = () => {
     const fetchVulnerabilities = async () => {
       try {
         const response = await fetch(
-          "https://final-client-backend.onrender.com//api/general/vulnerabilities"
+          "https://backend-gitignore.onrender.com/api/general/vulnerabilities"
         );
   
         const result = await response.json();
