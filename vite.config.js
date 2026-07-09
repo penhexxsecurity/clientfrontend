@@ -9,7 +9,7 @@ export default defineConfig({
       // Jab bhi frontend '/api' se shuru hone wali request bhejega, 
       // Vite use automatically backend server par redirect kar dega.
       '/api': {
-        target: 'https://final-client-backend.onrender.com/',
+        target: 'https://backend-gitignore.onrender.com/',
         changeOrigin: true,
         secure: false,
       }
